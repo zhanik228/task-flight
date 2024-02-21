@@ -364,7 +364,7 @@ ul, li {
     height: 50px;
 }
 
-.search-form__elem label {
+.search-form__label {
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -373,7 +373,7 @@ ul, li {
     width: 100%;
 }
 
-.search-form__elem label .arrow-down {
+.search-form__label .arrow-down {
     margin-right: 10px;
 }
 
@@ -523,7 +523,7 @@ ul, li {
     margin-bottom: 15px;
 }
 
-.promotion img {
+.promotion__img {
     height: 340px;
 }
 
