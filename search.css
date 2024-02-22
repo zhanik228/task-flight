@@ -291,7 +291,7 @@ ul, li {
     text-align: center;
     font-weight: 700;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .flight-cards__wrapper {
@@ -318,6 +318,16 @@ ul, li {
     padding: 15px;
     border-radius: 30px;
     position: relative;
+    transition: all .3s linear;
+}
+
+.flight-card:hover {
+    border: 2px solid var(--clr-accent-400);
+}
+
+.flight-card__info-title {
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .flight-card__body {
@@ -357,4 +367,35 @@ ul, li {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+/* select section */
+.select-flight-section {
+    padding: 60px 0;
+}
+
+.select-flight-section__title {
+    font-size: 32px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.select-flight-section__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+    .select-flight-section__inner {
+        flex-direction: column;
+    }
+}
+
+#display-selected-there {
+    width: 200px;
+    height: 200px;
+    background: var(--clr-accent-200);
+    display: block;
 }
