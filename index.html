@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container header__inner">
             <div class="logo">
-                <img width="120" src="./media1/logo.png" alt="Logo">
+                <img class="test-0-logo" width="120" src="./media1/logo.png" alt="Logo">
                 <a href="#"><h1 class="logo__title fs-700">FlightPool</h1></a>
             </div>
             <input type="checkbox" id="check">
@@ -24,7 +24,7 @@
             <nav class="menu">
                 <ul class="menu-list">
                     <li class="menu-list__item">
-                        <a href="#" class="test-0-nav-1 fs-500 menu-list__link active">Home</a>
+                        <a href="#" class="fs-500 menu-list__link active">Home</a>
                     </li>
                     <li class="menu-list__item">
                         <a href="#" class="test-0-nav-1 fs-500 menu-list__link"><i class="fas fa-ad"></i> Promotions</a>
@@ -78,8 +78,8 @@
                         <input id="to" class="test-0-fa search-form__input" type="text" placeholder="To">
                     </div>
                     <div class="search-form__elem">
-                        <label class="search-form__label" for="depart">Depart <span class="arrow-down"></span></label>
-                        <input class="test-0-fdt search-form__input" type="date" id="depart">
+                        <label class="search-form__label" for="departure-date">Depart <span class="arrow-down"></span></label>
+                        <input class="test-0-fdt search-form__input" type="date" id="departure-date">
                     </div>
                     <div class="search-form__elem">
                         <label class="search-form__label" for="return">Return <span class="arrow-down"></span></label>
@@ -92,6 +92,9 @@
                     <div class="search-form__elem">
                         <button class="test-0-fbs primary-btn">Search</button>
                     </div>
+                    <p class="flight-info">Price for selected date: <span class="flight-info__data" id="price-display"></span></p>
+                    <p class="flight-info">Departure probability: <span class="flight-info__data" id="departure-probability-display"></span> </p>
+                    <p class="flight-info">Booked tickets: <span class="flight-info__data" id="booking-count-display"></span> </p>
                 </form>
             </div>
         </section>
@@ -229,5 +232,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

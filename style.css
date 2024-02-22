@@ -388,6 +388,26 @@ ul, li {
     height: 40px;
 }
 
+.flight-info {
+    padding: 10px;
+    background: var(--clr-accent-400);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-between;
+    height: 90px;
+    border-radius: 15px;
+    display: none;
+}
+
+.flight-info__data {
+    margin-top: 5px;
+    background: #fff;
+    color: var(--clr-primary-400);
+    padding: 5px;
+}
+
 .arrow-down {
     display: inline-block;
     border-bottom: 3px solid var(--clr-accent-400);
