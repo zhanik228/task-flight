@@ -19,6 +19,21 @@ const flights = [
     passengersBooked: 30,
     price: 160,
   },
+  {
+    date: "2024-02-27",
+    passengersBooked: 55,
+    price: 160,
+  },
+  {
+    date: "2024-02-28",
+    passengersBooked: 40,
+    price: 160,
+  },
+  {
+    date: "2024-02-29",
+    passengersBooked: 37,
+    price: 160,
+  },
 ];
 
 const departureDateInput = document.getElementById("departure-date");

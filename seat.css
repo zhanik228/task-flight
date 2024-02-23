@@ -293,8 +293,10 @@ ul, li {
 
 .main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 100px;
 }
 
 .plane-scheme {
@@ -306,7 +308,8 @@ ul, li {
     border-top-right-radius: 50%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 90px;
+    column-gap: 40px;
+    row-gap: 20px;
     position: relative;
 }
 
@@ -329,12 +332,42 @@ ul, li {
     }
 }
 
+.plane-scheme__wing {
+    position: absolute;
+}
+
+.plane-scheme__wing--right {
+    left: 98.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 250px solid transparent;
+    border-left: 500px solid var(--clr-accent-200);
+}
+
+.plane-scheme__wing--left {
+    right: 98.2%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 250px solid transparent;
+    border-right: 500px solid var(--clr-accent-200);
+}
+
+@media screen and (max-width: 1400px) {
+    .plane-scheme__wing {
+        display: none;
+    }
+}
+
 .plane-seat {
     width: 40px;
     height: 40px;
     background: var(--clr-accent-400);
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
+}
+
+.plane-seat.chosen {
+    background: green;
 }
 
 .plane-seat__wrapper {
