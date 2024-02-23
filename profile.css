@@ -440,3 +440,82 @@ body {
     align-items: center;
     gap: 15px;
 }
+
+.reservations__title {
+    margin-bottom: 50px;
+}
+
+.flight-cards__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    row-gap: 40px;
+}
+
+@media screen and (max-width: 1090px) {
+    .flight-cards__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .flight-cards__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.flight-card {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 30px;
+    position: relative;
+    transition: all .3s linear;
+}
+
+.flight-card:hover {
+    border: 1px solid var(--clr-accent-400);
+}
+
+.flight-card__info-title {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.flight-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.flight-card__icon {
+    width: 70px;
+    height: 70px;
+    display: block;
+    background-color: rgb(170, 180, 27);
+    position: absolute;
+    top: -25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flight-card__icon .fa-plane {
+    color: #fff;
+}
+
+.flight-card__footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid var(--clr-accent-200);
+    padding-top: 10px;
+}
+
+.flight-card__footer-elem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
